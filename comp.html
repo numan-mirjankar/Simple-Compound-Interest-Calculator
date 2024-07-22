@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="comp.css" rel="stylesheet">
+</head>
+<body>
+    <h2>Compound Interest Calculator</h2>
+    <form id="compound-interest-form">
+        <label for="principal-compound">Principal (P):</label>
+        <input type="number" id="principal-compound" required><br><br>
+
+        <label for="Intrest-compound">Annual Interest Rate (%):</label>
+        <input type="number" id="Intrest-compound" step="any" required><br><br>
+
+        <label for="time-compound">Time (years):</label>
+        <input type="number" id="time-compound" required><br><br>
+
+        <label for="frequency-compound">Compounding Frequency:</label>
+        <select id="frequency-compound" required>
+            <option value="1">Annually</option>
+            <option value="2">Semi-annually</option>
+            <option value="4">Quarterly</option>
+            <option value="12">Monthly</option>
+        </select><br><br>
+
+        <button type="button" id="btn-compound">Calculate Compound Interest</button>
+        <div id="disp-compound">
+            <h3 >Compound Interest:</h3>
+            <p id="compound-interest-result"></p>
+        </div>
+    </form>
+
+   
+    <h2><a href="/index.html" id="lin">Click To Simple Interest</a></h2>
+    <script src="comp.js"></script>
+</body>
+</html>
